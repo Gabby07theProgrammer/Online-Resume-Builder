@@ -4,7 +4,7 @@ The Online Resume Builder is a web application that allows users to create ATS-f
 
 # Created by
 - Baybay, Sherwyl Hanns L. |
-- Cacap, Jim Raven R. |
+- Cacap, Jim Raven R. | jimRaven-04
 - Cervantes, Elijah Gabe C. | Gabby07theProgrammer
 - Ferrer, Mark Ferdinand P. | iFerdzOut
 - Salta, Dominic G. | Smebbzzz
