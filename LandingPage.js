@@ -7,3 +7,7 @@ function three(){
 function four(){
     location.replace("info.html")
 }
+
+function five(){
+    location.replace("LandingPage.html")
+}
