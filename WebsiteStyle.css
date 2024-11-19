@@ -1,0 +1,95 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+*{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+nav{
+   text-align: center;
+   font-size: 16px;
+   line-height: 1.6;
+   border-bottom: 5px solid black;
+   position: sticky;
+   left: 0;
+   top: 0;
+   width: 100%;
+
+}
+
+.footer{
+    position: relative; /* Prevent it from overlapping other content */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 1rem 0; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    background-color: black; /* Dark background for visibility */
+    color: white;
+}
+
+.Quote1{
+   text-align: center;
+   padding-top: 7.5rem;
+   font-size: 2.5rem;
+}
+
+.subline{
+    font-size: 1.3rem;
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 29.5px;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #0056b3;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+input[type="button"]{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+input[type="button"]:hover{
+    background-color: #0056b3;
+}
