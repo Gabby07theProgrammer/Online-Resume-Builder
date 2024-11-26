@@ -187,13 +187,14 @@ input[type="checkbox"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color, transform 0.3s ease-in-out;
     display: inline-block;
     text-align: center;
 }
 
 .button:hover{
     background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 button{
