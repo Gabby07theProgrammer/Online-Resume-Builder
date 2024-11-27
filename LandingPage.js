@@ -1,13 +1,13 @@
 function three(){
-    location.replace("template.html")
+    location.replace("Template.php")
 }
 
 function four(){
-    location.replace("info.html")
+    location.replace("info.php")
 }
 
 function five(){
-    location.replace("LandingPage.html")
+    location.replace("LandingPage.php")
 }
 
 
