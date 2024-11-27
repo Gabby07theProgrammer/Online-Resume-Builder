@@ -1,3 +1,3 @@
 function Generate(){
-    location.replace("Resume_Preview.html")
+    location.replace("Resume_Preview.php")
 }
