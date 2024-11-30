@@ -43,8 +43,8 @@
                 <p>Choose from a wide variety of modern, professional templates to make your resume visually appealing and stand out to potential employers. All templates are fully customizable to reflect your unique skills and experience.</p>
             </div>
             <div class="feature-item feature-item-3">
-                <h4>Instant PDF Download</h4>
-                <p>Once your resume is ready, download it instantly in PDF format, optimized for any job application platform. No more worrying about formatting when submitting your resume.</p>
+                <h4>Instant Download</h4>
+                <p>Once your resume is ready, download it instantly in PDF or Word format, optimized for any job application platform. No more worrying about formatting when submitting your resume.</p>
             </div>
         </div>
     </section>
