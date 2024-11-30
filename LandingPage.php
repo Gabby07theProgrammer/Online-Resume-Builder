@@ -15,29 +15,39 @@
             <h2 class="brand">Resume <span style="color: #007bff;">BUILD</span></h2>
             <button id="loginButton" class="button">Log-In or Register</button>
         </nav>
-    </header>
-    <input type= "button" class="button" onclick="four()" value = "Learn More">
+     </header>
+
+     <video autoplay loop muted>
+        <source src="bgvid.mp4" type="video/mp4" />
+    </video>
+
     <!-- Main Content -->
     <div class="main_content">
         <h1 class="Quote1">Create a Professional Resume in Minutes!</h1>
-        <p class="subline">Quickly craft a polished, job-winning resume with pre-made templates. Save time while ensuring your resume stands out with a professional, tailored design.</p>
-
-        <!-- Login Button -->
-        <div class="container">
-            <button class="button" onclick="four()"> Learn More </button>
-        </div>
+        <p class="subline">Quickly craft a polished, job-winning resume with pre-made <br> templates. 
+            Save time while ensuring your resume stands out with <br> a professional, tailored design.</p>
     </div>
 
-
-
-
-
-
-
-
-
-
-
+    <section class="feature-section">
+        <h3>Why Choose Us?</h3>
+        <p>Our platform provides you with the most efficient and user-friendly experience, helping you manage your tasks. Discover how we can make your life easier.</p>
+        <h2>Our Key Features</h2>
+        <!-- Feature List (Example with 3 items) -->
+        <div class="feature-list">
+            <div class="feature-item feature-item-1">
+                <h4>Easy-to-Use Resume Builder</h4>
+                <p>Create professional resumes quickly with our intuitive drag-and-drop interface. Choose from customizable templates and effortlessly add your experience, skills, and achievements.</p>
+            </div>
+            <div class="feature-item feature-item-2">
+                <h4>Professional Templates</h4>
+                <p>Choose from a wide variety of modern, professional templates to make your resume visually appealing and stand out to potential employers. All templates are fully customizable to reflect your unique skills and experience.</p>
+            </div>
+            <div class="feature-item feature-item-3">
+                <h4>Instant PDF Download</h4>
+                <p>Once your resume is ready, download it instantly in PDF format, optimized for any job application platform. No more worrying about formatting when submitting your resume.</p>
+            </div>
+        </div>
+    </section>
     <!-- Modal for Login / Registration -->
     <!-- Modal for Login / Registration -->
 <div id="loginModal" class="modal">
