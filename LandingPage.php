@@ -13,6 +13,7 @@
     <header>
         <nav>
             <h2 class="brand">Resume <span style="color: #007bff;">BUILD</span></h2>
+            <button id="loginButton" class="button">Log-In or Register</button>
         </nav>
     </header>
     <input type= "button" class="button" onclick="four()" value = "Learn More">
@@ -23,10 +24,19 @@
 
         <!-- Login Button -->
         <div class="container">
-            <button id="loginButton" class="button">Log-In</button>
             <button class="button" onclick="four()"> Learn More </button>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Modal for Login / Registration -->
     <!-- Modal for Login / Registration -->

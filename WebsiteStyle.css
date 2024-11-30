@@ -3,24 +3,6 @@
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #FAF9F6;
-    text-align: center;
-}
-nav{
-   text-align: center;
-   font-size: 16px;
-   line-height: 1;
-   color: black;
-   border-bottom: 5px solid black;
-   top: 0;
-   width: 100%;
-
-}
-
 body {
     background: linear-gradient(120deg, #e0f7fa 0%, #80deea 100%);
     overflow-x: hidden;
