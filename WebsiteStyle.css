@@ -219,7 +219,7 @@ input[type="checkbox"] {
     font-size: 3rem; /* Adjusting for responsiveness */
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
     max-width: 90%;
     line-height: 1.2;
@@ -503,6 +503,10 @@ video {
     }
     .subline{
        display: none;
+    }
+
+    .modal {
+        width: 95%;
     }
 
     .feature-section {
