@@ -18,7 +18,7 @@
      </header>
 
      <video autoplay loop muted>
-        <source src="bgvid.mp4" type="video/mp4" />
+        <source src="Website Videos/bgvid.mp4" type="video/mp4" />
     </video>
 
     <!-- Main Content -->
