@@ -1,4 +1,4 @@
 <?php
 session_destroy();
-header("location: LandingPage.php");
+header("location: Home_Page.php");
 ?>

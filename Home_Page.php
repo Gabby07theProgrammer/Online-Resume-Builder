@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="WebsiteStyle.css">
-    <script defer src="LandingPage.js"></script>
+    <script defer src="Home_Page.js"></script>
 </head>
 
 <body>

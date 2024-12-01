@@ -25,7 +25,7 @@ if(isset($_POST['signUp'])){
 function function_alert($message) {
     echo "<script>
     alert('$message');
-    window.location.href = 'LandingPage.php';
+    window.location.href = 'Home_Page.php';
     </script>";
 }
 
@@ -40,7 +40,7 @@ if(isset($_POST['signIn'])){
         session_start();
         $row = $result->fetch_assoc();
         $_SESSION['email'] = $row['email'];
-        header("Location: homepage.php");
+        header("Location: User_Page.php");
         exit();
     } else {
         function_alert("Email or password not found");
