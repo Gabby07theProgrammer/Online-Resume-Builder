@@ -575,7 +575,7 @@ button:hover {
     width: 100%;   
     height: 100vh; 
     object-fit: contain;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 }
 
@@ -602,7 +602,7 @@ button:hover {
 }
 
 
-/*Template Page Responsiveness*/
+/*User_Page Responsiveness*/
 
 @media screen and (max-width: 1157px) {
     .descript {
