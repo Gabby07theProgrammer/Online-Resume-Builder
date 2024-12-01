@@ -11,7 +11,9 @@
     <header>
         <nav>
             <h2 class="Brand">Resume <span style="color: #007bff;">BUILD</span></h2>
-                <button type="button" href="logout.php" class="logout">Log-Out</button>
+            <a href="logout.php">
+            <button type="button" class="logout">Log-Out</button>
+            </a>
         </nav>
     </header>
 
@@ -20,7 +22,7 @@
     </video>
 
     <div class="main_content" id="main">
-        <h1 class="Quote1">Welcome,""!</h1>
+        <h1 class="Quote1">Welcome to the Resume <span style="color:#007bff">BUILD</span>,""!</h1>
         <p class="subline">Create a standout resume in minutes! Our easy-to-use builder offers<br>customizable 
             templates to help you land your dream job.<br> Get started today—it's fast, free, and stress-free!</p>
             <div class="container">

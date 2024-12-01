@@ -6,6 +6,7 @@
 header{
     top: 0;
     left: 0;
+    position: sticky;
 }
 nav{
     display: flex;
@@ -460,7 +461,7 @@ video {
        display: none;
     }
 
-    .modal {
+    .modal-content {
         width: 80%;
     }
 
