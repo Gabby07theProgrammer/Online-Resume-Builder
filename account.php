@@ -11,7 +11,7 @@ $userId = $_SESSION['user_id'];
 
 // Fetch current username and email from the database
 $stmt = $conn->prepare("SELECT username, email FROM users WHERE id = ?");
-$stmt->bind_param("s", $userId);
+$stmt->bind_param("i", $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();

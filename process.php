@@ -3,7 +3,7 @@ session_start();
 include 'connect.php';
 
 // Get the user ID from the session or from the form submission
-$userId = $_SESSION['id']; // Replace `1` with dynamic user session if needed
+$userId = $_SESSION['user_id']; // Use consistent session variable name
 
 // Update user account
 if (isset($_POST['updateUser'])) {
@@ -12,10 +12,11 @@ if (isset($_POST['updateUser'])) {
     $newPassword = $_POST['newPassword'];
 
     // Hash the new password
-    $hashedPassword = md5($newPassword); // Simple example, consider using password_hash() for better security
+    $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
 
     // Update query
-    $sql = "UPDATE users SET username='$newUsername', email='$newEmail', password='$hashedPassword' WHERE id='$userId'";
+    $stmt = $conn->prepare("UPDATE users SET username=?, email=?, password=? WHERE id=?");
+    $stmt->bind_param("sssi", $newUsername, $newEmail, $hashedPassword, $userId);
 
     if ($conn->query($sql) === TRUE) {
         echo "Account updated successfully!";
@@ -30,7 +31,8 @@ if (isset($_POST['updateUser'])) {
 // Delete user account
 if (isset($_POST['deleteUser'])) {
     // Delete query
-    $sql = "DELETE FROM users WHERE id='$userId'";
+    $stmt = $conn->prepare("DELETE FROM users WHERE id=?");
+    $stmt->bind_param("i", $userId);
 
     if ($conn->query($sql) === TRUE) {
         echo "Account deleted successfully!";
