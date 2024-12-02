@@ -11,6 +11,9 @@
     <header>
         <nav>
             <h2 class="Brand">Resume <span style="color: #007bff;">BUILD</span></h2>
+            <a href="account.php">
+            <button type="button" class="view-account">View Account</button>
+            </a>
             <a href="logout.php">
             <button type="button" class="logout" id="button">Log or Sign-Out</button>
             </a>

@@ -68,6 +68,21 @@ video {
     padding: 15px;
 }
 
+.view-account {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.view-account:hover {
+    background-color: #0056b3;
+}
+
 .button{
     padding: 10px 20px;
     font-size: 16px;
@@ -406,6 +421,11 @@ button:hover{
         box-sizing: border-box;
         gap: 10px;
     }
+
+    .view-account {
+        font-size: 14px;
+    }
+    
     .button{
         font-size: 14px;
     }
@@ -462,6 +482,11 @@ video {
         font-size: 14px;
         font-weight: bold;
     }
+
+    .view-account {
+        font-size: 12px;
+    }
+
     .button{
         font-size: 12px;
         padding: 5px 10px;
