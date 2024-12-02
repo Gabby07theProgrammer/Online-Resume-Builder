@@ -1,5 +1,8 @@
 function three(){
-    location.replace("Template.php")
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+    
 }
 
 function four(){
