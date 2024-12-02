@@ -3,12 +3,22 @@ session_start();
 include 'connect.php';
 
 // Assume the user's ID is stored in the session
+if (!isset($_SESSION['user_id'])) {
+    header('Location: index.php');
+    exit();
+}
 $userId = $_SESSION['user_id']; 
 
 // Fetch current username and email from the database
-$sql = "SELECT username, email FROM users WHERE id = '$userId'";
-$result = $conn->query($sql);
+$stmt = $conn->prepare("SELECT username, email FROM users WHERE id = ?");
+$stmt->bind_param("s", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
 $user = $result->fetch_assoc();
+if (!$user) {
+    header('Location: error.php');
+    exit();
+}
 
 $currentUsername = $user['username'];
 $currentEmail = $user['email'];
