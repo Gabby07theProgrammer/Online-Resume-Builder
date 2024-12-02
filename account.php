@@ -3,7 +3,7 @@ session_start();
 include 'connect.php';
 
 // Assume the user's ID is stored in the session
-$userId = $_SESSION['id']; 
+$userId = $_SESSION['user_id']; 
 
 // Fetch current username and email from the database
 $sql = "SELECT username, email FROM users WHERE id = '$userId'";

@@ -11,9 +11,6 @@
     <header>
         <nav>
             <h2 class="Brand">Resume <span style="color: #007bff;">BUILD</span></h2>
-            <a href="account.php">
-            <button type="button" class="view-account">View Account</button>
-            </a>
             <a href="logout.php">
             <button type="button" class="logout" id="button">Log or Sign-Out</button>
             </a>
@@ -29,6 +26,9 @@
         <p class="subline">Create a standout resume in minutes! Our easy-to-use builder offers<br>customizable 
             templates to help you land your dream job.<br> Get started today—it's fast, free, and stress-free!</p>
             <div class="container">
+                <a href="account.php">
+                    <button type="button" class="view-account">View Account</button>
+                </a>
                 <a href="#template">
                     <button class="button"> Get Started </button>
                 </a>
