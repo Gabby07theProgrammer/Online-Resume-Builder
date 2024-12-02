@@ -466,6 +466,11 @@ video {
         font-size: 12px;
         padding: 5px 10px;
     }
+
+    #button{
+        font-size: 12px;
+    }
+
     .Quote1{
         font-size: 2.5rem;
     }
