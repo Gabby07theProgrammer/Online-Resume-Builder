@@ -48,14 +48,14 @@ function hide() {
                 <!-- Work Experience -->
                 <div class="section">
                     <h2>WORK  EXPERIENCE</h2>
-                    <pre class = "wrapped-text">${inputField["work_experience"].value}</pre>
+                    <pre class="wrapped-text">${inputField["work_experience"].value}</pre>
                 </div>
                 
 
                 <!-- Education -->
                 <div class="section">
                     <h2>EDUCATION</h2>
-                    <pre = class = "wrapped-text">${inputField["education"].value}</pre>
+                    <pre class="wrapped-text">${inputField["education"].value}</pre>
                 </div>
             </div>
             <button onclick="print()">Print Resume</button>
