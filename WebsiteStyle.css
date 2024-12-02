@@ -516,7 +516,7 @@ video {
         padding: 5px 10px;
     }
     .Quote1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .subline{
        display: none;
@@ -693,7 +693,7 @@ button:hover {
       }
 
       button{
-        margin-left: 25%;
+        margin: auto;
         width: 50%;
        }
        img{
@@ -726,8 +726,8 @@ button:hover {
         }
 
         button{
-            width: 100%;
-            margin:0;
+            width: 75%;
+            margin:auto;
            }
 
         img{
@@ -736,24 +736,4 @@ button:hover {
     
    }
 
-}
-
-
-input[type="button"]{
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color,transform 0.3s ease-in-out;
-    display: inline-block;
-    text-align: center;
-}
-
-input[type="button"]:hover{
-    background-color: #0056b3;
-    transform: scale(1.1);
 }
