@@ -12,7 +12,7 @@
         <nav>
             <h2 class="Brand">Resume <span style="color: #007bff;">BUILD</span></h2>
             <a href="logout.php">
-            <button type="button" class="logout">Log or Sign-Out</button>
+            <button type="button" class="logout" id="button">Log or Sign-Out</button>
             </a>
         </nav>
     </header>

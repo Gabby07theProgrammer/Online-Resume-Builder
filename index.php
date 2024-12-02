@@ -65,19 +65,6 @@
                 <input type="text" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit" class="btn submit" name="signIn">Log In</button>
-                <a href="javascript:void(0);" class="btn-change-password" 
-                onclick="showPasswordChange()">Change Password</a>
-            </form>
-        </div>
-
-         <!-- Change Password Form -->
-        <div id="passwordChangeForm" class="form">
-            <form action="update_password.php" method="POST" onsubmit="return validatePasswordChange(event)">
-                <input type="password" name="currentPassword" placeholder="Current Password" required>
-                <input type="password" name="newPassword" placeholder="New Password" required>
-                <input type="password" name="confirmPassword" placeholder="Confirm New Password" required>
-                <button type="submit" class="btn submit">Update Password</button>
-                <a href="javascript:void(0);" class="btn-back" onclick="showLogin()">Back to Login</a>
             </form>
         </div>
 
