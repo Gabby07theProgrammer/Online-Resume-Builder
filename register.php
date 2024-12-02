@@ -15,7 +15,7 @@ if(isset($_POST['signUp'])){
     } else {
         $insertQuery = "INSERT INTO users(username,email,password) VALUES ('$username','$email','$password')";
         if($conn->query($insertQuery) === TRUE){
-            header("Location: Home_Page.php");
+            header("Location: index.php");
         } else {
             echo "Error: " . $conn->error;
         }
@@ -25,7 +25,7 @@ if(isset($_POST['signUp'])){
 function function_alert($message) {
     echo "<script>
     alert('$message');
-    window.location.href = 'Home_Page.php';
+    window.location.href = 'index.php';
     </script>";
 }
 
