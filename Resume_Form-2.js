@@ -1,14 +1,11 @@
-// script.js 
-
-// Taking elements from HTML
-const inputField = document.querySelector(".inputField");
+const inputField = document.querySelector("#inputField");
 const main = document.querySelector(".resume-builder");
 const outputContainer = document.querySelector(".output_container");
 
 let isHidden = true;
 
 function BackTemp2(){
-    location.replace("Template.html")
+    location.replace("User_Page.php")
 }
 // Function to toggle between input form and resume preview
 function hide() {

@@ -123,7 +123,6 @@ document.querySelectorAll("textarea").forEach(textarea => {
     });
 });
 function BackTemp(){
-
-    location.replace("template.html")
+    location.replace("User_Page.php")
 }
     
