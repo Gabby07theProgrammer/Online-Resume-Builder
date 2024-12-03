@@ -1,5 +1,5 @@
 
-const inputField = document.querySelector("#inputField");
+const inputField = document.querySelector(".inputField");
 const main = document.querySelector(".resume-builder");
 const outputContainer = document.querySelector(".output_container");
 

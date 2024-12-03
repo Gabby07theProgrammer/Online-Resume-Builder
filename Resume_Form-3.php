@@ -56,6 +56,8 @@
         .button_container{
             display: flex;
             justify-content: center;
+            padding: 15px;
+            gap: 33%;
         }
 
        .output_container {

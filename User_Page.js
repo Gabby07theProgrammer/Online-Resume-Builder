@@ -3,7 +3,7 @@ function FirstTemp(){
 }
 
 function SecondTemp(){
-    location.replace("Resume_Form-2.php")
+    location.replace("Resume_Form-2.html")
 }
 
 function ThirdTemp(){
