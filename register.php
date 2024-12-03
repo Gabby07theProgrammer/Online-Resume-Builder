@@ -32,7 +32,6 @@ function function_alert($message) {
 if(isset($_POST['signIn'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $password = md5($password);
 
     $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = $conn->query($sql);
@@ -47,22 +46,28 @@ if(isset($_POST['signIn'])){
     }
 }
 
-if (isset($_POST['update'])) {
+if (isset($_POST['update_password'])) {
     $email = $_POST['email'];
-    $new_username = $_POST['new_username'];
     $new_password = $_POST['new_password'];
-    $hashed_password = password_hash($new_password, PASSWORD_BCRYPT);
 
-    $updateQuery = "UPDATE users SET username = ?, password = ? WHERE email = ?";
+    // Validate input
+    if (empty($email) || empty($new_password)) {
+        die("Email and new password are required.");
+    }
+
+    // Update the password in plaintext (NOT secure)
+    $updateQuery = "UPDATE users SET password = ? WHERE email = ?";
     $stmt = $conn->prepare($updateQuery);
-    $stmt->bind_param("sss", $new_username, $hashed_password, $email);
+    $stmt->bind_param("ss", $new_password, $email);
 
     if ($stmt->execute()) {
-        function_alert("Account updated successfully!");
+        echo "Password updated successfully!";
+        header("Location: index.php");
     } else {
-        echo "Error: " . $stmt->error;
+        echo "Error updating password: " . $stmt->error;
     }
 }
+
 
 if (isset($_POST['delete'])) {
     $email = $_POST['email'];

@@ -8,22 +8,19 @@
 <body>
     <div class="container">
         <h1>Manage Account</h1>
-
-        <!-- Update User Form -->
+        <h2>Update Password</h2>
         <form action="register.php" method="POST">
-            <h2>Update Account</h2>
             <input type="email" name="email" placeholder="Enter Email" required>
-            <input type="text" name="new_username" placeholder="Enter New Username" required>
             <input type="password" name="new_password" placeholder="Enter New Password" required>
-            <button type="submit" name="update">Update Account</button>
+            <button type="submit" name="update_password">Update Password</button>
         </form>
-
-        <!-- Delete User Form -->
         <form action="register.php" method="POST">
             <h2>Delete Account</h2>
             <input type="email" name="email" placeholder="Enter Email" required>
             <button type="submit" name="delete">Delete Account</button>
         </form>
+
+        <button type="button" onclick="window.location.href='index.php'" class="button">Back</button>
     </div>
 </body>
 </html>
@@ -61,7 +58,7 @@ form {
 }
 
 input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;

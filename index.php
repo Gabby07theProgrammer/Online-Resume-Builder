@@ -26,7 +26,10 @@
         <h1 class="Quote1">Create a Professional Resume in Minutes!</h1>
         <p class="subline">Quickly craft a polished, job-winning resume with pre-made <br> templates. 
             Save time while ensuring your resume stands out with <br> a professional, tailored design.</p>
+    <div class="container">
+    <button type="button" onclick="window.location.href='manage_account.php'" class="button">Manage Account</button>
     </div>
+        </div>
 
     <section class="feature-section">
         <h3>Why Choose Us?</h3>
