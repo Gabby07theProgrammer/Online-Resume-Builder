@@ -19,9 +19,9 @@ if (isset($_POST['updateUser'])) {
     $stmt->bind_param("sssi", $newUsername, $newEmail, $hashedPassword, $userId);
 
     if ($conn->query($sql) === TRUE) {
-        echo "Account updated successfully!";
+        session_regenerate_id(true);
         // Redirect back to account page after update
-        header('Location: account.php');
+        header('Location: account.html');
         exit();
     } else {
         echo "Error updating account: " . $conn->error;
@@ -37,7 +37,7 @@ if (isset($_POST['deleteUser'])) {
     if ($conn->query($sql) === TRUE) {
         echo "Account deleted successfully!";
         // Redirect to a page after account deletion (e.g., logout page)
-        header('Location: logout.php');
+        header('Location: login.html');
         exit();
     } else {
         echo "Error deleting account: " . $conn->error;

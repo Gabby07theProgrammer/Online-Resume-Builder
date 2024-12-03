@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Management</title>
+</head>
+<body>
+    <h2>Update Account Information</h2>
+    <form action="process.php" method="post">
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required><br><br>
+        
+        <label for="newEmail">New Email:</label>
+        <input type="email" id="newEmail" name="newEmail" required><br><br>
+        
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required><br><br>
+        
+        <input type="submit" name="updateUser" value="Update Account">
+    </form>
+
+    <h2>Delete Account</h2>
+    <form action="process.php" method="post" onsubmit="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
+        <input type="submit" name="deleteUser" value="Delete Account">
+    </form>
+
+    <p><a href="index.php">Back to Home</a></p>
+</body>
+</html>
