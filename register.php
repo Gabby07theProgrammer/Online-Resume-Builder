@@ -46,4 +46,35 @@ if(isset($_POST['signIn'])){
         function_alert("Email or password not found");
     }
 }
+
+if (isset($_POST['update'])) {
+    $email = $_POST['email'];
+    $new_username = $_POST['new_username'];
+    $new_password = $_POST['new_password'];
+    $hashed_password = password_hash($new_password, PASSWORD_BCRYPT);
+
+    $updateQuery = "UPDATE users SET username = ?, password = ? WHERE email = ?";
+    $stmt = $conn->prepare($updateQuery);
+    $stmt->bind_param("sss", $new_username, $hashed_password, $email);
+
+    if ($stmt->execute()) {
+        function_alert("Account updated successfully!");
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+}
+
+if (isset($_POST['delete'])) {
+    $email = $_POST['email'];
+
+    $deleteQuery = "DELETE FROM users WHERE email = ?";
+    $stmt = $conn->prepare($deleteQuery);
+    $stmt->bind_param("s", $email);
+
+    if ($stmt->execute()) {
+        function_alert("Account deleted successfully!");
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+}
 ?>
