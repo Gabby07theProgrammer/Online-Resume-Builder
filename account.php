@@ -4,7 +4,7 @@ include 'connect.php';
 
 // Assume the user's ID is stored in the session
 if (!isset($_SESSION['user_id'])) {
-    header('Location: index.php');
+    header('Location: account.php');
     exit();
 }
 $userId = $_SESSION['user_id']; 
