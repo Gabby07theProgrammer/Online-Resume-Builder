@@ -32,6 +32,7 @@ function function_alert($message) {
 if(isset($_POST['signIn'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $password = md5($password);
 
     $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
     $result = $conn->query($sql);
@@ -49,6 +50,7 @@ if(isset($_POST['signIn'])){
 if (isset($_POST['update_password'])) {
     $email = $_POST['email'];
     $new_password = $_POST['new_password'];
+    $new_password = md5($new_password);
 
     // Validate input
     if (empty($email) || empty($new_password)) {
