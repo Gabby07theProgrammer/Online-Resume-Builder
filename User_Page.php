@@ -26,9 +26,6 @@
         <p class="subline">Create a standout resume in minutes! Our easy-to-use builder offers<br>customizable 
             templates to help you land your dream job.<br> Get started today—it's fast, free, and stress-free!</p>
             <div class="container">
-                <a href="#viewaccount">
-                    <button type="button" class="view-account">View Account</button>
-                </a>
                 <a href="#template">
                     <button class="button"> Get Started </button>
                 </a>
@@ -39,31 +36,6 @@
     </div>
 
     <section class="second-section">
-    <br>
-    <br>
-    <div class="form-container">
-    <form action="process.php" method="post">
-    <h2 id="viewaccount">Update Account Information</h2>
-        <label for="newUsername">New Username:</label>
-        <input type="text" id="newUsername" name="newUsername" required><br><br>
-        
-        <label for="newEmail">New Email:</label>
-        <input type="email" id="newEmail" name="newEmail" required><br><br>
-        
-        <label for="newPassword">New Password:</label>
-        <input type="password" id="newPassword" name="newPassword" required><br><br>
-        
-        <input type="submit" name="updateUser" class="btn" value="Update Account">
-    </form>
-    </div>
-
-     <div class="form-container">
-     <h2>Delete Account</h2>
-    <form action="process.php" method="post" onsubmit="return confirm('Are you sure you want to delete your account? This action cannot be undone.');">
-        <input type="submit" name="deleteUser" class="delete" value="Delete Account">
-    </form>
-     </div>
-     
         <div id="template">
          <div class="main-text">
             <h1>Choose a Template</h1>

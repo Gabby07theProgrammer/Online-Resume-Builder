@@ -69,18 +69,20 @@ video {
 }
 
 .view-account {
-    background-color: #007bff;
-    color: white;
-    border: none;
     padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
+    transition: background-color, transform 0.3s ease-in-out;
+    text-align: center;
 }
 
 .view-account:hover {
     background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 .button{
@@ -218,61 +220,8 @@ input[type="checkbox"] {
     position: relative;
 }
 
-button.btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.form-container {
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    margin: auto;
-}
-
-input[type="text"], input[type="email"], input[type="password"] {
-    width: 95%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-button.btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button.btn:hover {
-    background-color: #218838;
-}
-
-button.delete-btn {
-    background-color: #dc3545;
-}
-
-button.delete-btn:hover {
-    background-color: #c82333;
+.section{
+    padding-top: 10%;
 }
 
 .feature-section {
@@ -647,6 +596,20 @@ button:hover {
     width: 100%;
 }
 
+.about{
+    h1{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
 .descript{
   display: flex;
   padding-bottom: 1.875rem;
@@ -775,6 +738,59 @@ button:hover {
    }
 
 }
+ @media screen and(max-width: 768px) {
+    .about{
+        h1{
+            font-size: 16px;
+        }
+
+        h2{
+            font-size: 14px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+ }
+
+ @media screen and(max-width: 430px) {
+    .form-container{
+        max-width: 55%;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 55%;
+    }
+
+    .about{
+        h1{
+            font-size: 14px;
+        }
+
+        h2{
+            font-size: 12px;
+        }
+
+        p{
+            font-size: 8px;
+        }
+
+
+ }
+
+ @media screen and(max-width:320px) {
+    .form-container{
+        max-width: 25%;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 25%;
+    }
+
+ }
+
+
 
 .correction-feedback {
     margin-top: 5px;
