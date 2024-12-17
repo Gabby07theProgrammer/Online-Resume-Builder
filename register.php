@@ -74,6 +74,7 @@ if (isset($_POST['update_password'])) {
     if ($stmt->execute()) {
         echo "Password updated successfully!";
         header("Location: index.php");
+        exit();
     } else {
         echo "Error updating password: " . $stmt->error;
     }
