@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const textareas = document.querySelectorAll('.textInput');
+    const textareas = document.querySelectorAll('#textInput');
     
     textareas.forEach(textarea => {
         // Create container for showing corrections
