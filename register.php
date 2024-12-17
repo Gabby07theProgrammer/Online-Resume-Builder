@@ -8,14 +8,20 @@ if(isset($_POST['signUp'])){
     $password = $_POST['password'];
     $password = md5($password);
 
-    $checkEmail = "SELECT * FROM users WHERE email='$email'";
-    $result = $conn->query($checkEmail);
+    $checkEmail = "SELECT * FROM users WHERE email=?";
+    $stmt = $conn->prepare($checkEmail);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
     if($result->num_rows > 0){
         function_alert("Email Address Already Exists !");
     } else {
-        $insertQuery = "INSERT INTO users(username,email,password) VALUES ('$username','$email','$password')";
-        if($conn->query($insertQuery) === TRUE){
+        $insertQuery = "INSERT INTO users(username,email,password) VALUES (?,?,?)";
+        $stmt = $conn->prepare($insertQuery);
+        $stmt->bind_param("sss", $username, $email, $password);
+        if($stmt->execute()){
             header("Location: index.php");
+            exit();
         } else {
             echo "Error: " . $conn->error;
         }
@@ -34,8 +40,11 @@ if(isset($_POST['signIn'])){
     $password = $_POST['password'];
     $password = md5($password);
 
-    $sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
-    $result = $conn->query($sql);
+    $sql = "SELECT * FROM users WHERE email=? AND password=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
     if($result->num_rows > 0){
         session_start();
         $row = $result->fetch_assoc();
